@@ -1,160 +1,70 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои знания о технологиях</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            margin: 20px 0;
-        }
-        .card {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        .card.green {
-            background-color: #e0f7fa;
-        }
-        .card.orange {
-            background-color: #ffe0b2;
-        }
-        .card.red {
-            background-color: #ffcdd2;
-        }
-        .card.blue {
-            background-color: #bbdefb;
-        }
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .card-body {
-            margin: 20px 0;
-        }
-        .progress {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .progress-bar {
-            width: 70%;
-            height: 10px;
-            background-color: #ccc;
-        }
-        .card-footer ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-        }
-        .card-footer li {
-            margin-right: 10px;
-        }
-        .card-footer img {
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-        }
-        .btn-add,
-        .btn-countdown {
-            text-decoration: none;
-            color: #007bff;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .btn-add svg,
-        .btn-countdown svg {
-            margin-right: 5px;
-        }
-    </style>
+    <title>Image Slider Effect Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать в мир моих технологий</h1>
-    </header>
-    <section>
-        <h2>Обо мне</h2>
-        <p>Привет, я Джамоладдин! Увлекаюсь технологиями и люблю делиться своими знаниями с другими.</p>
-    </section>
-    <section>
-        <div class="card green">
-            <div class="card-header">
-                <div class="date">
-                    Feb 2, 2021
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                    <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 0 1-3 0Zm0 0" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="card-body">
-                <h3>web designing</h3>
-                <p>Prototyping</p>
-                <div class="progress">
-                    <span>Progress</span>
-                    <div class="progress-bar"></div>
-                    <span>90%</span>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background: url('https://i.postimg.cc/g0W4qN2y/Switzerland.jpg');">
+                <div class="content">
+                    <div class="name">Switzerland</div>
+                    <div class="description">Renowned for its breathtaking Alpine scenery and precision in craftsmanship</div>
+                    <button>See More</button>
                 </div>
             </div>
-            <div class="card-footer">
-                <ul>
-                    <li> <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
-                    <li> <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
-                    <a href="#" class="btn-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </ul>
-                <a href="#" class="btn-countdown">2 days left</a>
+
+            <div class="item" style="background: url('https://i.postimg.cc/DZfgR0s8/Finland.jpg');">
+                <div class="content">
+                    <div class="name">Finland</div>
+                    <div class="description">Known for its saunas, lakes, and a deep connection to nature</div>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="item" style="background: url('https://i.postimg.cc/kX2jn2HS/Iceland.jpg');">
+                <div class="content">
+                    <div class="name">Iceland</div>
+                    <div class="description">Famous for its stunning geothermal landscapes, waterfalls, and glaciers</div>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="item" style="background: url('https://i.postimg.cc/05WWRYVx/Australia.jpg');">
+                <div class="content">
+                    <div class="name">Australia</div>
+                    <div class="description">Distinguished by its diverse ecosystems, ranging from beaches to bushland</div>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="item" style="background: url('https://i.postimg.cc/dtg5DqMx/Netherland.jpg');">
+                <div class="content">
+                    <div class="name">Netherland</div>
+                    <div class="description">Characterized by its iconic canals, tulip fields, and windmills</div>
+                    <button>See More</button>
+                </div>
+            </div>
+
+            <div class="item" style="background: url('https://i.postimg.cc/sDGJktB9/Ireland.jpg');">
+                <div class="content">
+                    <div class="name">Ireland</div>
+                    <div class="description">Known for its lush green landscapes and rich cultural heritage</div>
+                    <button>See More</button>
+                </div>
             </div>
         </div>
-        <div class="card orange">
-            <div class="card-header">
-                <div class="date">
-                    Feb 05, 2021
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                    <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 0 1-3 0Zm0 0" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="card-body">
-                <h3>mobile app</h3>
-                <p>Shopping</p>
-                <div class="progress">
-                    <span>Progress</span>
-                    <div class="progress-bar"></div>
-                    <span>30%</span>
-                </div>
-            </div>
-            <div class="card-footer">
-                <ul>
-                    <li> <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
-                    <li> <img src="https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
-                    <a href="#" class="btn-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </ul>
-                <a href="#" class="btn-countdown">3 weeks left</a>
-            </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
-        <div class="card red">
-            <div class="card-header">
-                <div class="date">
-                    March 03, 2021
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                    <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
