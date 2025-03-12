@@ -1,12 +1,29 @@
-let next = document.querySelector('.next');
-let prev = document.querySelector('.prev');
+$(function() {
 
-next.addEventListener('click', function() {
-    let items = document.querySelectorAll('.item');
-    document.querySelector('.slide').appendChild(items[0]);
-})
+  // sizeSections sets the height of each section element to the viewport
+  // height unless the content height is larger than the the viewport
+  // requires the inner content to be wrapped in a .content div
+  var sizeSections = function() {
+    var viewHeight = $(window).height();
+    $("section").each(function(){
+      var naturalHeight = $(this).find(".content").outerHeight();
+      if ( naturalHeight > viewHeight) {
+        $(this).css("height", "auto");
+      } else {
+        $(this).css("height", viewHeight + "px");
+      }
+    });
+  }
 
-prev.addEventListener('click', function() {
-    let items = document.querySelectorAll('.item');
-    document.querySelector('.slide').prepend(items[items.length - 1]);
-})
+  // call sizeSections on load
+  sizeSections();
+  // attach smoothScroll jQuery plugin to indicated links
+  $('.navbar a').smoothScroll();
+
+  // call sizeSections whenever the window is resized
+  $(window).resize(function() {
+    sizeSections();
+  });
+
+});
+
