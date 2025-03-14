@@ -268,7 +268,12 @@ img{
 
 .hero{
     display: flex;
-    width: 100vw;}
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
 
 .hero-img-box{
     max-width: 50%;
