@@ -266,7 +266,9 @@ img{
     z-index: 10;
 }
 
-.hero{ display: flex; }
+.hero{
+    display: flex;
+    width: 100vw;}
 
 .hero-img-box{
     max-width: 50%;
@@ -716,11 +718,7 @@ img{
 }
 
 @media screen and (max-width: 768px){
-    .hero{
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
-    }
+    .hero{ flex-direction: column;}
 
     .hero-img-box{
         max-width: 100%;
