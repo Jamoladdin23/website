@@ -716,7 +716,11 @@ img{
 }
 
 @media screen and (max-width: 768px){
-    .hero{ flex-direction: column;}
+    .hero{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
 
     .hero-img-box{
         max-width: 100%;
