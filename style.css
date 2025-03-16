@@ -253,7 +253,7 @@ img{
     top: 110%;
     right: 0;
     transform: scale(.5);
-    width: calc(100% - 80px);
+    width: calc(100% - 40px);
     height: 100%;
     background: var(--background-dark-90);
     overflow-y: auto;
@@ -271,7 +271,7 @@ img{
 }
 
 .hero-img-box{
-    max-width: 40%;
+    max-width: 35%;
     max-height: 100%;
 }
 
