@@ -117,18 +117,11 @@ ion-icon{ --ionicon-stroke-width: 20px;}
     color: var(--color-white-70);
 }
 
-button.btn-primary {
-    padding: 8px 70px;
-    border: 2px solid var(--background-orange);
-    font-size: var(--font-size-14);
-    transition: var(--transition-default);
-}
-
 .btn-primary{
     padding: 8px 70px;
-    border: 2px solid var(--background-orange);
-    font-size: var(--font-size-14);
-    transition: var(--transition-default);
+    border: 2px solid var(--background-orange)!important;
+    font-size: var(--font-size-14)!important;
+    transition: var(--transition-default)!important;
 }
 
 .btn-primary:hover{
