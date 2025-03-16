@@ -117,12 +117,17 @@ ion-icon{ --ionicon-stroke-width: 20px;}
     color: var(--color-white-70);
 }
 
-.btn-primary{
+.btn-primary {
     padding: 8px 70px;
     border: 2px solid var(--background-orange);
     font-size: var(--font-size-14);
     transition: var(--transition-default);
+    background: transparent; /* Прозрачный фон по умолчанию */
+    color: inherit; /* Наследование цвета текста */
+    cursor: pointer; /* Указатель при наведении */
+    text-align: center;
 }
+
 
 .btn-primary:hover{
     background: var(--background-orange);
