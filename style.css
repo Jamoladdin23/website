@@ -313,7 +313,7 @@ img{
 .service{ margin-bottom: 50px;}
 
 .grid-item{
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 }
