@@ -11,9 +11,9 @@ const itemCategory = document.querySelectorAll('.item-category');
 
 /*Slidebar Toggle*/ 
 
-menuToggler.addEventListener('click', function(){
-    sideBar.classList.toggle('active');
-})
+/*menuToggler.addEventListener('click', function(){*/
+/*    sideBar.classList.toggle('active');*/
+/*})*/
 
 /* Page Navigation Functionality */
 
