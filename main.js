@@ -22,13 +22,13 @@ for(let i = 0; i < navItemLinks.length; i++){
 
         const itemLinkText = this.textContent.toLowerCase();
 
-        for(let i = 0; i < pages.length; i++){
-            if(pages[i].classList.contains(itemLinkText)){
-                pages[i].classList.add('active');
-                navItemLinks[i].classList.add('active');
+        for(let j = 0; j < pages.length; j++){
+            if(pages[j].classList.contains(itemLinkText)){
+                pages[j].classList.add('active');
+                navItemLinks[j].classList.add('active');
             }else{
-                pages[i].classList.remove('active');
-                navItemLinks[i].classList.remove('active');
+                pages[j].classList.remove('active');
+                navItemLinks[j].classList.remove('active');
             }
         }
     });

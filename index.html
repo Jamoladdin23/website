@@ -26,12 +26,11 @@
 
     <section class="about page active">
         <div class="hero">
-            <div class="hero-img-box">
-                <img src="images/newimage3.jpg" alt="hero img">
-            </div>
-
             <div class="hero-content">
                 <div class="hero-content-wrapper">
+                    <div class="hero-avatar-box">
+                        <img src="images/newimage3.jpg" alt="profile photo" class="hero-avatar">
+                    </div>
                     <p class="title">Python Backend Developer</p>
                     <h1 class="name">Jamoladdin Zaripov</h1>
                     <div class="description">
@@ -238,6 +237,36 @@
                             <!--                                <div class="divider"></div>-->
                             <!--                            </div>-->
                         </div>
+
+                        <div class="projects">
+                            <h2>Projects</h2>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h4 class="project-title">SaaS Restaurant Platform</h4>
+                                    <span class="project-role">Founder</span>
+                                </div>
+                                <div class="project-stack">
+                                    <span>Django</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span><span>Docker</span><span>Nginx</span>
+                                </div>
+                                <a href="https://www.yemak.vip" class="project-link" target="_blank">www.yemak.vip</a>
+                                <p class="project-description">Designed, launched, and monetized a multi-tenant SaaS platform — a direct-ordering alternative to food delivery aggregators (Bolt Food, Wolt, Glovo). 4 paying clients on recurring subscriptions. Each client gets an isolated subdomain, demo menu, and admin panel — fully automated onboarding.</p>
+                                <p class="project-key"><strong>Key decisions:</strong> Tenant data isolation via custom ORM manager without separate databases. Async Telegram notifications (Celery + Redis), price snapshot, rate limiting, CI/CD (GitHub Actions), Docker prod/dev. 79+ tests, 99% uptime on AWS.</p>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h4 class="project-title">SaaS Booking Platform</h4>
+                                    <span class="project-role">Founder</span>
+                                </div>
+                                <div class="project-stack">
+                                    <span>Django</span><span>Next.js</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span><span>Twilio</span><span>Nginx</span>
+                                </div>
+                                <a href="https://www.reservla.com" class="project-link" target="_blank">www.reservla.com</a>
+                                <p class="project-description">Designed and launched a multi-tenant appointment booking platform for service businesses (beauty salons, barbershops, clinics). Each client gets an isolated subdomain, admin panel, staff and schedule management, and automated SMS/email confirmations — fully automated onboarding. Platform is live on AWS.</p>
+                                <p class="project-key"><strong>Key decisions:</strong> Tenant data isolation via custom ORM manager; timezone-aware slot generation with DST support; OTP client auth via SMS (Twilio); async notification pipeline (Celery + Redis); wildcard SSL, subdomain routing via Nginx; JWT with silent token refresh.</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="wrapper">
@@ -405,15 +434,15 @@
                     <form action="https://formspree.io/f/mvgkgadl" method="POST">
                         <div class="form-grid">
                             <div class="grid-left">
-                                <input type="text" required placeholder="Full Name" autocomplete="off">
-                                <input type="email" name="email" required placeholder="You Email" autocomplete="off">
-                                <input type="text" required placeholder="Subject" autocomplete="off">
+                                <input type="text" name="fullName" required placeholder="Full Name" autocomplete="off">
+                                <input type="email" name="email" required placeholder="Your Email" autocomplete="off">
+                                <input type="text" name="subject" required placeholder="Subject" autocomplete="off">
 
 
                             </div>
 
                             <div class="grid-right">
-                                <textarea name="message" required=Text></textarea>
+                                <textarea name="message" required></textarea>
 
                             </div>
                         </div>
