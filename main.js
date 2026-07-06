@@ -58,3 +58,41 @@ for(let i = 0; i < filterBtn.length; i++){
         }
     });
 }
+
+/* Phone mockup carousels */
+
+document.querySelectorAll('[data-carousel]').forEach(function(carousel){
+    const dotsBox = carousel.closest('.mockup-column').querySelector('[data-dots]');
+
+    function buildDots(){
+        const slides = carousel.querySelectorAll('img');
+        dotsBox.innerHTML = '';
+        slides.forEach(function(_, i){
+            const dot = document.createElement('span');
+            if(i === 0) dot.classList.add('active');
+            dot.addEventListener('click', function(){
+                carousel.scrollTo({ left: i * carousel.clientWidth, behavior: 'smooth' });
+            });
+            dotsBox.appendChild(dot);
+        });
+    }
+
+    buildDots();
+
+    carousel.addEventListener('scroll', function(){
+        const index = Math.round(carousel.scrollLeft / carousel.clientWidth);
+        dotsBox.querySelectorAll('span').forEach(function(dot, i){
+            dot.classList.toggle('active', i === index);
+        });
+    });
+
+    carousel.querySelectorAll('img').forEach(function(img){
+        img.addEventListener('error', function(){
+            img.remove();
+            buildDots();
+            if(!carousel.querySelector('img')){
+                carousel.closest('.mockup-column').remove();
+            }
+        });
+    });
+});
