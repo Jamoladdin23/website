@@ -118,7 +118,12 @@ ion-icon{ --ionicon-stroke-width: 20px;}
 }
 
 .btn-primary{
+    display: inline-block;
     padding: 8px 70px;
+    background: transparent;
+    color: var(--color-white-95);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
     border: 2px solid var(--background-orange)!important;
     font-size: var(--font-size-14)!important;
     transition: var(--transition-default)!important;
@@ -902,7 +907,7 @@ img{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .contact-info .info-box{
