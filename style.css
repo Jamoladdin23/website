@@ -662,7 +662,7 @@ img{
 
 .phone-notch {
     position: absolute;
-    top: 6px;
+    top: 7px;
     left: 50%;
     transform: translateX(-50%);
     width: 46px;
@@ -670,23 +670,6 @@ img{
     background: #0a0a0a;
     border-radius: 8px;
     z-index: 2;
-}
-
-.phone-browser-bar {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 18px;
-    margin-top: 16px;
-    margin-bottom: 4px;
-    background: #1c1c1c;
-    border-radius: 6px;
-}
-
-.phone-browser-bar span {
-    font-size: 9px;
-    color: var(--color-white-60);
 }
 
 .phone-screen {
