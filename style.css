@@ -615,8 +615,9 @@ img{
 
 .project-mockups {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
     flex-wrap: wrap;
     margin-top: 24px;
     padding-top: 20px;
@@ -648,26 +649,26 @@ img{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 260px;
-    height: 560px;
+    width: 160px;
+    height: 345px;
     background: #0a0a0a;
-    border-radius: 40px;
-    padding: 10px;
+    border-radius: 26px;
+    padding: 7px;
     box-shadow:
         0 0 0 2px #3a3a3a,
-        0 25px 50px -15px #000a,
+        0 15px 30px -12px #000a,
         inset 0 0 0 1px #000;
 }
 
 .phone-notch {
     position: absolute;
-    top: 8px;
+    top: 6px;
     left: 50%;
     transform: translateX(-50%);
-    width: 70px;
-    height: 16px;
+    width: 46px;
+    height: 12px;
     background: #0a0a0a;
-    border-radius: 10px;
+    border-radius: 8px;
     z-index: 2;
 }
 
@@ -676,15 +677,15 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 24px;
-    margin-top: 22px;
-    margin-bottom: 6px;
+    height: 18px;
+    margin-top: 16px;
+    margin-bottom: 4px;
     background: #1c1c1c;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 .phone-browser-bar span {
-    font-size: 11px;
+    font-size: 9px;
     color: var(--color-white-60);
 }
 
@@ -692,7 +693,7 @@ img{
     position: relative;
     flex: 1 1 auto;
     width: 100%;
-    border-radius: 22px;
+    border-radius: 14px;
     overflow: hidden;
     background: #111;
 }
@@ -721,12 +722,12 @@ img{
 
 .mockup-counter {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
-    padding: 4px 10px;
+    right: 6px;
+    bottom: 6px;
+    padding: 2px 7px;
     background: #000000b3;
     color: var(--color-white-95);
-    font-size: 11px;
+    font-size: 9px;
     border-radius: 20px;
     z-index: 3;
     pointer-events: none;
@@ -734,12 +735,13 @@ img{
 
 @media screen and (max-width: 768px) {
     .project-mockups {
-        gap: 30px;
+        justify-content: center;
+        gap: 24px;
     }
 
     .phone-mockup {
-        width: 230px;
-        height: 495px;
+        width: 150px;
+        height: 323px;
     }
 }
 
