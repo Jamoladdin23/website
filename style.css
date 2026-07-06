@@ -343,6 +343,8 @@ img{
 
 .service{ margin-bottom: 50px;}
 
+.resume-section{ margin-bottom: 50px;}
+
 .grid-item{
     display: grid;
     grid-template-columns: 1fr 1fr;
